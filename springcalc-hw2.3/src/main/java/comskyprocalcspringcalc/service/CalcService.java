@@ -1,4 +1,4 @@
-package comskyprocalcspringcalc;
+package comskyprocalcspringcalc.service;
 
 import org.springframework.web.bind.annotation.RequestParam;
 

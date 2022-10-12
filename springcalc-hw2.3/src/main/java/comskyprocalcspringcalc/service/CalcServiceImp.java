@@ -1,4 +1,4 @@
-package comskyprocalcspringcalc;
+package comskyprocalcspringcalc.service;
 
 import org.springframework.stereotype.Service;
 
@@ -22,6 +22,10 @@ public class CalcServiceImp implements CalcService {
 	}
 
 	public double calcDivide(double num1, double num2) {
+
+		if(num2 == 0){
+			throw new IllegalArgumentException("Попытка деления на 0");
+		}
 		return num1 / num2;
 	}
 
